@@ -13,6 +13,7 @@ export default async function fetchMovies(search: string): Promise<Movie[]> {
             query: search,
         },
         headers: {
+            accept: 'application/json',
             Authorization: `Bearer ${API_TOKEN}`,
         }
     });
