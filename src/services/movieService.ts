@@ -19,4 +19,4 @@ export default async function fetchMovies(search: string): Promise<Movie[]> {
     });
 
     return getMovie.data.results;
-}
+};
